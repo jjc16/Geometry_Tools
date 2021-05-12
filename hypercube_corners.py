@@ -11,7 +11,7 @@ def hypercube_corners(start, length):
     
     Example start = [1, 1, 1, 1, 2] , length = 2
     
-    Author jjc16_1@yahoo.com
+    Author jjc16_1@yahoo.com 
     '''
   if len(start) == 1:
     tmp = start.copy()
