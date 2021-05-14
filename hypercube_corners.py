@@ -32,3 +32,15 @@ def hypercube_corners(start, length):
       out.append(item1)
       out.append(item2)
     return out
+
+
+def find_lines(corners):
+  lines = []
+  for ii in range(len(corners)):
+    for jj in range(ii, len(corners)):
+      tmp = [int(not(corners[ii][kk] == corners[jj][kk])) for kk in range(len(corners[ii]))]
+      # print(tmp)
+      if sum(tmp) == 1:
+        lines.append(tuple((corners[ii], corners[jj])))
+
+  return lines
