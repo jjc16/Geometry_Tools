@@ -72,13 +72,13 @@ def find_all_cube_one_size(list_, sz):
       lines = find_lines(corners)
       ln_lst = []
       for ln in lines:
-      coord = find_coord(ln[0], ln[1])
-      pts = gen_tst_pts(ln[0], ln[1], coord)
-      tmp = test_pts(list_, pts)
-      tmp = all(tmp)
-      ln_lst.append(tmp)
-      if all(ln_lst):
-      count += 1
+        coord = find_coord(ln[0], ln[1])
+        pts = gen_tst_pts(ln[0], ln[1], coord)
+        tmp = test_pts(list_, pts)
+        tmp = all(tmp)
+        ln_lst.append(tmp)
+        if all(ln_lst):
+          count += 1
 
   return count
 
