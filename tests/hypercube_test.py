@@ -1,5 +1,5 @@
 import unittest
-from .. hypercube_utils import find_all_hypercubes
+from . hypercube_utils import find_all_hypercubes
 
 class TestHyperCube(unittest.TestCase):
 
